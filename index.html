@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запчасти для сельскохозяйственной техники</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- логотип и верхняя панелька управления -->
+    <header>
+            <div class="logo">
+                <img src="img/logotip.png" alt="Логотип">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">О КОМПАНИИ</a></li>
+                    <li><a href="index.html">КАТАЛОГ ЗАПЧАСТЕЙ</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart-button">
+                <a href="cart.html">
+                    <img src="img/cart.png" alt="Корзина">
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+    </header>
+    <!-- логотип и верхняя панелька -->
+
+    <main>
+        <!-- баннер -->
+        <section>
+            <div class="banner" id="banner">
+                <img class="slider" src="img/banner_6.jpg" alt="Баннер_1">
+                <img class="slider" src="img/banner_2.jpg" alt="Баннер_2">
+                <img class="slider" src="img/banner_3.jpeg" alt="Баннер_3">
+                <img class="slider" src="img/banner_4.jpg" alt="Баннер_4">
+                <img class="slider" src="img/banner_5.jpg" alt="Баннер_5">
+            </div>    
+        </section>
+        <!-- баннер -->
+        
+        <h1>Каталог <span class="name-firm">запчастей</span> для сельскохозяйственной техники</h1>
+        <section class="product">
+        <!-- блок с фильтрацией товаров -->
+            <div class="filters">
+                <h3>Фильтры</h3>
+                <div class="filter">
+                  <h4 class="h_filter">Назначение</h4>
+                  <div class="checkboxes">
+                    <label>
+                        <input type="checkbox" name="category" value="tractor"> Для трактора
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="harvester"> Для комбайна
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="cultivator"> Для культиватора
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="diskator"> Для дисковой бороны
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="seeder"> Для сеялки
+                    </label>
+                  </div>
+                </div>
+            </div>
+        <!-- блок с фильтрацией товаров -->
+            
+        <!-- карточки товаров -->          
+            <div class="cards">
+                <div class="card" data-category="tractor">
+                    <div class="card-top">
+                        <a href="tnvd.html" class="card-image"> <img src="img/tnvd_mtz.jpg" alt="ТНВД Д-263 (МТЗ 2022.3)"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">114 500 руб.</div>
+                        <a href="tnvd.html" class="card-title">Топливный насос высокого давления Д-260 (МТЗ 2022.3) MOTORPAL</a>
+                        <button class="card-add" data-product-id="1">В корзину</button>
+                    </div>
+                </div>
+                <div class="card" data-category="cultivator">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/lapa200mm.jpg" alt="Лапа стрельчатая 305мм"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">1 540 руб.</div>
+                        <a href="#" class="card-title">Лапа стрельчатая (305 мм) Bourgault BG200-pWV-1208</a>
+                        <button class="card-add" data-product-id="2">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="diskator">
+                    <div class="card-top">
+                      <a href="#" class="card-image"> <img src="img/bdm_disk.jpg" alt="Диск ромашка на дисковую борону "/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">3 490 руб.</div>
+                        <a href="#" class="card-title">Диск "ромашка" на дисковую борону БДМ-6х4</a>
+                        <button class="card-add" data-product-id="3">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="tractor">
+                    <div class="card-top">
+                    <a href="#" class="card-image"> <img src="img/kolenval_mtz.png" alt="Коленвал на МТЗ 82.1"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">39 900 руб.</div>
+                        <a href="#" class="card-title">Вал коленчатый МТЗ в сборе</a>
+                        <button class="card-add" data-product-id="4">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="tractor">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/shatun_mtz.jpg" alt="Шатун на МТЗ 82.1"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">5 860 руб.</div>
+                        <a href="#" class="card-title">Шатун на двигатель МТЗ 80/82.1 (усиленный)</a>
+                        <button class="card-add" data-product-id="5">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="plug">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/lemeh_left.jpeg" alt="Лемех левый"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">3 670 руб.</div>
+                        <a href="#" class="card-title">Лемех крыльчатый левый (с напл) (BELLOTA)</a>
+                        <button class="card-add" data-product-id="6">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="plug">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/lemeh_right.jpg" alt="Лемех правый"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">3 670 руб.</div>
+                        <a href="#" class="card-title">Лемех крыльчатый правый (с напл) (BELLOTA)</a>
+                        <button class="card-add" data-product-id="7">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="seeder">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/soshnik3.6.jpg" alt="Сошник узкорядный СЗ-3.6"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">4 750 руб.</div>
+                        <a href="#" class="card-title">Сошник СЗ-3.6 узкорядный (13.010) двустрочный</a>
+                        <button class="card-add" data-product-id="8">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="harvester">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/shnek_kolos_1218jpg.jpg" alt="Шнек колосовой КЗС-1218"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">9 860 руб.</div>
+                        <a href="#" class="card-title">Шнек КЗК 10-0218020 колосовой КЗС-1218</a>
+                        <button class="card-add" data-product-id="9">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="harvester">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/podbar_1218.jpg" alt="Подбарабанье КЗС-1218"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">38 750 руб.</div>
+                        <a href="#" class="card-title">Подбарабанье КЗК-12-0103220 КЗС-1218</a>
+                        <button class="card-add" data-product-id="10">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="plug">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/otval_pbs.jpeg" alt="Отвал плуга ПБС-10У"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">4 150 руб.</div>
+                        <a href="#" class="card-title">Отвал плуга ПБС-10У</a>
+                        <button class="card-add" data-product-id="11">В корзину</button>
+                    </div>
+                </div>
+                
+                <div class="card" data-category="harvester">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/jd_filter.jpeg" alt="Топливный фильтр John Deere"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">4 750 руб.</div>
+                        <a href="#" class="card-title">Топливный фильтр на комбайн John Deere (DZ112918)</a>
+                        <button class="card-add" data-product-id="12">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="tractor">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/turbina_d245.jpg" alt="Турбина ММЗ Д245.7, 245.9"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">31 550 руб.</div>
+                        <a href="#" class="card-title">Турбина ММЗ Д245.7, 245.9</a>
+                        <button class="card-add" data-product-id="13">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="seeder">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/val_supn.png" alt="Вал карданный сеялки СУПН"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">14 350 руб.</div>
+                        <a href="#" class="card-title">Вал карданный сеялки СУПН</a>
+                        <button class="card-add" data-product-id="14">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="harvester">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/irs_acros.jpg" alt="Барабан измельчителя ИРС (Акрос 585/595)"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">87 050 руб.</div>
+                        <a href="#" class="card-title">Барабан измельчителя ИРС (Акрос 585/595) </a>
+                        <button class="card-add" data-product-id="15">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="harvester">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/palec_acros.jpeg" alt="Палец двойной режущего аппарата (Акрос 550/585/595)"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">470 руб.</div>
+                        <a href="#" class="card-title">Палец двойной режущего аппарата (Акрос 550/585/595)</a>
+                        <button class="card-add" data-product-id="16">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="tractor">
+                    <div class="card-top">
+                    <a href="#" class="card-image"> <img src="img/dozator.jpg" alt="Рулевой дозатор"/></a>
+                    </div>
+                    <div class="card-bottom">
+                    <div class="card-prices">14 150 руб.</div>
+                    <a href="#" class="card-title">Рулевой дозатор (МТЗ 80/82.1)</a>
+                    <button class="card-add" data-product-id="17">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="tractor">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/radiator_mtz1221.jpg" alt="Радиатор водяной (МТЗ-1221)"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">15 950 руб.</div>
+                        <a href="#" class="card-title">Радиатор водяной (МТЗ-1221)</a>
+                        <button class="card-add" data-product-id="18">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="diskator">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/disk_lemken.jpg" alt="Диск LEMKEN полый D620х6"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">3 300 руб.</div>
+                        <a href="#" class="card-title">Диск LEMKEN полый D620х6 </a>
+                        <button class="card-add" data-product-id="19">В корзину</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="tractor">
+                    <div class="card-top">
+                        <a href="#" class="card-image"> <img src="img/tyaga_1221.jpg" alt="Тяга рулевая в сборе МТЗ-1221"/></a>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-prices">12 410 руб.</div>
+                        <a href="#" class="card-title">Тяга рулевая в сборе МТЗ-1221</a>
+                        <button class="card-add" data-product-id="20">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        <!-- карточки товаров -->
+        </section>
+
+        <!-- нижняя часть -->
+        <footer>
+            <div class="footer-links">
+              <a href="about.html">О нас</a>
+              <a href="contacts.html">Контакты</a>
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Техническая документация</a>
+            </div>
+
+            <div class="footer-icons">
+              <a href="https://wa.me/" target="_blank">
+                <img src="img/whatsapp-icon.png" alt="WhatsApp">
+              </a>
+              <a href="https://t.me/" target="_blank">
+                <img src="img/telegram_icon.png" alt="Telegram">
+              </a>
+              <a href="mailto:example_email@example.ru">
+                <img src="img/mail_icon.png" alt="Email">
+              </a>
+            </div>
+          </footer>
+        <!-- нижняя часть -->
+
+        <script src="js/banner_script.js"></script>
+        <script src="js/cart_ind_script.js"></script>
+        <script src="js/sort_card.js"></script>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/style_cart.css">
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <img src="img/logotip.png" alt="Логотип">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">О КОМПАНИИ</a></li>
+                    <li><a href="index.html">КАТАЛОГ ЗАПЧАСТЕЙ</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart-button">
+                  <img src="img/cart.png" alt="Корзина">
+          </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="banner" id="banner">
+                <img class="slider" src="img/banner_6.jpg" alt="Баннер_1">
+                <img class="slider" src="img/banner_2.jpg" alt="Баннер_2">
+                <img class="slider" src="img/banner_3.jpeg" alt="Баннер_3">
+                <img class="slider" src="img/banner_4.jpg" alt="Баннер_4">
+                <img class="slider" src="img/banner_5.jpg" alt="Баннер_5">
+            </div>    
+        </section>   
+        <div class="width_cart">
+            <h1>Корзина</h1>
+            <div id="cart-items"></div>
+            <div class="cart_total" id="cart-total">Итого: <span id="total-sum">0</span></div>
+        </div>
+
+        <!-- нижняя часть -->
+        <footer>
+            <div class="footer-links">
+              <a href="about.html">О нас</a>
+              <a href="contacts.html">Контакты</a>
+              <a href="#">Политика конфиденциальности</a>
+              <a href="#">Техническая документация</a>
+            </div>
+
+            <div class="footer-icons">
+              <a href="https://wa.me/" target="_blank">
+                <img src="img/whatsapp-icon.png" alt="WhatsApp">
+              </a>
+              <a href="https://t.me/" target="_blank">
+                <img src="img/telegram_icon.png" alt="Telegram">
+              </a>
+              <a href="mailto:example_email@example.ru">
+                <img src="img/mail_icon.png" alt="Email">
+              </a>
+            </div>
+          </footer>
+        <!-- нижняя часть -->
+
+        <script src="js/banner_script.js"></script>
+        <script src="js/cart_script.js"></script>
+
+    </main>
+</body>
+</html>
+
+

@@ -1,0 +1,311 @@
+@font-face{
+  font-family: 'Montserrat';
+  src: local('Montserrat');
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face{
+  font-family: 'Open_sans';
+  src: local('Open_sans');
+  src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+    height: 80px; /* высота верхней полоски */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+    width: 70px;
+    position: absolute;
+    left: 120px;
+    margin-top: -33px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 90px; /* отступы между элементами */
+}
+
+nav a {
+    text-decoration: none;
+    color: #33cb38;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #45a049;
+    color: #ffffff;
+}
+
+.banner {
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slider.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slider :first-child {
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* карточки товаров в каталоге */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  width: 100%;
+  max-width: 1250px; 
+  justify-content: center;
+  justify-items: center;
+  column-gap: 40px;
+  row-gap: 40px; 
+  margin-top: 30px;
+}
+
+.card {
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+  }
+  
+.card:hover {
+    box-shadow: 4px 8px 16px rgba(0, 36, 87, 0.2);
+}
+  
+  .card-top {
+    flex: 0 0 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: 0.2s;
+  }
+  
+  .card-image:hover img {
+    transform: scale(1.1);
+  }
+  
+  .card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 10px;
+  }
+  
+  .card-prices {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 19px;
+    display: flex;
+  }
+  
+  .card-title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+    text-decoration: none;
+  }
+  
+  .card-title:hover {
+    color: #000000;
+  }
+  
+  .card-add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #70c05b;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: auto;
+  }
+  
+  .card-add:hover {
+    border: 1px solid #2a9e2a;
+    background-color: #2cab10;
+    color: #fff;
+  }
+
+  .card.hidden {
+    display: none;
+  }
+/* карточки товаров в каталоге */
+
+
+/*кнопка корзины в верхней панели*/
+.cart-button {
+  position: relative;
+  left: 120px;
+}
+
+.cart-button a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.cart-button img {
+    width: 40px;
+    height: 40px;
+}
+
+#cart-count {
+    background-color: #17af09;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+/*кнопка корзины в верхней панели*/
+
+.product {
+  display: flex;
+  gap:0px;
+}
+
+.filters {
+  width: 250px;
+  height: 230px;
+  padding: 20px;
+  margin-left: 25px;
+  margin-top: 25px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters h3 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.h_filter {
+  margin-top: 15px;
+}
+
+.filter h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.checkboxes label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #dddddd;
+  padding: 60px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 55px;
+  margin-left: 300px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #272727;
+}
+
+.footer-icons {
+  display: flex;
+  
+}
+
+.footer-icons a img {
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+}
+
+.name-firm {
+  color: #e03030;
+  font-weight: bold;
+}
